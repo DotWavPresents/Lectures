@@ -1,0 +1,1 @@
+If you're using IntelliJ, this folder should be set-up as the desired output path for the Compiler
