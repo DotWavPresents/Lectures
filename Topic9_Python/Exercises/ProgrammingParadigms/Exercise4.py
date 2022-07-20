@@ -13,8 +13,6 @@ def main():
         # Ex: 625 // 10 = 62
         # Hint 2: n % 10 -> yields the last digit (rest of division by 10)
         # Ex: 625 % 10 = 5
-        # Hint 3: n ** p -> calculates n to the power of p
-        # Ex: 5 ** 4 = 625
 
         pass
 

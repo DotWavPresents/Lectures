@@ -8,7 +8,7 @@ def main():
     for element in list:
         if element % 2 == 0:
             # If it's even, keep it
-            filteredList.append(element)
+            filteredList += [element]
         # else: If it's odd, remove it. In this case, do nothing
 
     print(filteredList)

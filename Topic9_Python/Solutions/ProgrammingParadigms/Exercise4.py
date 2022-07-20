@@ -8,20 +8,23 @@ def main():
         You may assume the given number is always positive
         Ex: mirror(4798) -> 8974"""
 
-        def mirrorAux(number, digit):
-            if number < 10:
+        def mirrorAux(number, accumulated):
+            if number == 0:
                 # Bottom case: if the number has a single digit, the mirror of it is the same digit
-                return number
+                return accumulated
             else:
-                # 'number % 10' is fetching the last digit
-                # if the number is 625, for it to become 526, we need to add 500 + 20 + 6
-                # '10 ** digit' gives us the power of 10 needed to make the 500
-                # so we get (625 % 10) * (10 ** 2) which yields 500
-                # to get the 20 + 6 we recursively call mirrorAux(62, 1)
-                # '625 // 10 = 62'
-                return (number % 10) * (10 ** digit) + mirrorAux(number // 10, digit - 1)
+                # Every recursive call, we're removing the last digit from 'number' by doing 'number // 10'
+                # (ex: 625 // 10 = 62), and placing it in the accumulated argument by doing 'number % 10'
+                # (ex: 625 % 10 = 5).
+                # By doing this, we are transferring the last digits into the accumulated result
+                # 1st recursion with number = 625 and accumulated = 0-
+                # return mirrorAux(62, 5)
+                # 2nd: return mirrorAux(6, 52)
+                # 3rd: return mirrorAux(0, 526)
+                # 4th: return 526 because number == 0 and accumulated == 526
+                return mirrorAux(number // 10, accumulated * 10 + (number % 10))
 
-        return mirrorAux(number, int(math.log(number, 10)))
+        return mirrorAux(number, 0)
 
     print(mirror(67)) # 76
     print(mirror(28)) # 82
