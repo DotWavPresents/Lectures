@@ -1,4 +1,4 @@
-package Examples.ProgrammingParadigms.BadCakeExample.CakeExample;
+package Examples.ProgrammingParadigms.CakeExample;
 
 public class Bowl {
 
