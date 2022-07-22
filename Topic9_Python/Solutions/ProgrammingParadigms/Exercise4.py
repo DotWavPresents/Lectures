@@ -10,7 +10,7 @@ def main():
 
         def mirrorAux(number, accumulated):
             if number == 0:
-                # Bottom case: if the number has a single digit, the mirror of it is the same digit
+                # We ran out of digits. Therefore, the answer is whatever has been accumulated
                 return accumulated
             else:
                 # Every recursive call, we're removing the last digit from 'number' by doing 'number // 10'
