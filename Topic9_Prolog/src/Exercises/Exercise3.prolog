@@ -17,7 +17,7 @@ factorial(Number, Factorial) :-
         % Hint 2: You will need to use recursion. Remember Functional Programming?
 
 % ?- factorial(0, X).
-% X = 0.
+% X = 1.
 % ?- factorial(3, X).
 % X = 6.
 % ?- factorial(5, X).

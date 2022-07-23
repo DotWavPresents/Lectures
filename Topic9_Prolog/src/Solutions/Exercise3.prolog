@@ -18,7 +18,7 @@ factorial(Number, Factorial) :-
 
 
 % ?- factorial(0, X).
-% X = 0.
+% X = 1.
 % ?- factorial(3, X).
 % X = 6.
 % ?- factorial(5, X).
