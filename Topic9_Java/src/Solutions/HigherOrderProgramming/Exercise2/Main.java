@@ -53,8 +53,8 @@ public class Main {
 
         // TODO 6: Between all animals, what's the animal with the smallest name?
 
-        System.out.println("Animal with largest name 1: " + zoo.stream().sorted((a1, a2) -> Integer.compare(a1.getName().length(), a2.getName().length())).limit(1).toList());
+        System.out.println("Animal with smallest name 1: " + zoo.stream().sorted((a1, a2) -> Integer.compare(a1.getName().length(), a2.getName().length())).limit(1).toList());
         // Or, if we follow Intellij's suggestions:
-        System.out.println("Animal with largest name 2: " + zoo.stream().sorted(Comparator.comparingInt(a -> a.getName().length())).limit(1).toList());
+        System.out.println("Animal with smallest name 2: " + zoo.stream().sorted(Comparator.comparingInt(a -> a.getName().length())).limit(1).toList());
     }
 }

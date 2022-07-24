@@ -52,6 +52,6 @@ public class Main {
 
         // TODO 6: Between all animals, what's the animal with the smallest name?
 
-        //System.out.println("Animal with largest name: " + zoo.stream().TODO.get());
+        //System.out.println("Animal with smallest name: " + zoo.stream().TODO.get());
     }
 }
