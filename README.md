@@ -6,4 +6,5 @@ Learning materials that I, BlackKnight625, created for my lectures. You may find
 
 ### Videos
 **Part 1-** (Programming Fundamentals) https://www.youtube.com/watch?v=5828EmVzcCc
+
 **Part 2-** (Higher Order Programming) https://www.youtube.com/watch?v=tQFCNMQMt8U
