@@ -1,8 +1,5 @@
 package Exercises.Composite.StringVerifier;
 
-import Solutions.Composite.StringVerifier.*;
-import Solutions.Composite.StringVerifier.Verifier;
-
 public class Main {
 
     public static void main(String[] args) {
